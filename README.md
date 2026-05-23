@@ -1,107 +1,113 @@
-# 🚀 Suhaas Choudary Mallavarapu — Portfolio
+# Suhaas Portfolio
 
-🌐 **Live Website:**  
+Modern portfolio website showcasing full-stack, AI, and machine learning projects.
+
+## Live Website
+
 https://suhaas-portfolio-tau.vercel.app/
 
 ---
 
-## 🧠 About
+## About
 
-This is my personal portfolio designed to showcase my work as a **Full-Stack Developer and ML Systems Builder**.
+This portfolio highlights my work in:
+- Full-stack development
+- Machine learning applications
+- Computer vision projects
+- Backend systems
+- Modern responsive UI development
 
-The focus is not just on visuals, but on delivering a **high-performance, cinematic, and user-focused experience** that reflects real-world product thinking.
-
----
-
-## ⚡ What This Portfolio Demonstrates
-
-- Strong understanding of **UI/UX design principles**
-- Ability to build **scalable full-stack systems**
-- Focus on **performance, smooth animations, and usability**
-- Real project experience with **backend + ML integration**
+The goal was to create a clean, fast, and professional portfolio experience focused on project presentation and usability.
 
 ---
 
-## 🧩 Featured Projects
+## Featured Projects
 
-### 🔹 Smart Task Manager
-- Full-stack application with real-time task handling
-- Backend deployed and publicly accessible
-- Designed for scalability and responsiveness
+### EduTrack AI
+AI-powered student management and tracking platform built with modern full-stack architecture.
 
-👉 Live Demo: https://smart-task-manager-4.onrender.com/  
-👉 Source Code: https://github.com/suhaas2006/smart-task-manager
+### Smart Task Manager
+Full-stack task management system with REST APIs, responsive dashboard UI, and real-time task handling.
 
----
+### 3D Reconstruction System
+Photogrammetry and COLMAP-based 3D reconstruction pipeline using 300+ real-world images.
 
-### 🔹 3D Reconstruction Pipeline (COLMAP)
-- Built a pipeline to convert 2D images into 3D structures
-- Processed **300+ images**
-- Improved performance and output quality
+### Disease Prediction System
+Machine learning-based healthcare prediction application using predictive modeling techniques.
 
-👉 Source Code: https://github.com/suhaas2006/3D-Reconstruction-COLMAP
+### Handwritten Recognition System
+Deep learning and computer vision project for handwritten text/digit recognition.
 
----
-
-### 🔹 Smart File Organizer
-- Automated file organization system
-- Focused on improving workflow efficiency
-
-👉 Source Code: https://github.com/suhaas2006/smart-file-organizer
+### Smart File Organizer
+Automation-based file classification and directory management utility.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-**Frontend:**
-- HTML, CSS, JavaScript
-- GSAP (animations)
+### Frontend
+- HTML
+- CSS
+- JavaScript
 
-**Backend:**
+### Backend
 - Node.js
 - REST APIs
 
-**Database:**
+### Database
 - MongoDB
 
-**Tools & Libraries:**
+### Machine Learning & CV
+- Python
 - OpenCV
 - NumPy
-- Git & GitHub
+
+### Tools
+- Git
+- GitHub
+- Vercel
 
 ---
 
-## 🎯 Key Highlights
+## Features
 
-- Cinematic UI with smooth transitions  
-- Interactive project showcase  
-- Resume integration  
-- Real-world deployment experience  
-- Strong focus on **user experience + performance**
-
----
-
-## 📄 Resume
-
-Available directly in the portfolio website.
+- Responsive modern UI
+- Project showcase section
+- Resume integration
+- Smooth animations and transitions
+- Mobile-friendly design
+- Real project deployments
 
 ---
 
-## 🔗 Connect With Me
+## Installation
 
-- GitHub: https://github.com/suhaas2006  
-- Portfolio: https://suhaas-portfolio-tau.vercel.app/
-
----
-
-## 🚀 Future Improvements
-
-- More advanced full-stack projects  
-- Improved backend scalability  
-- Enhanced UI/UX interactions  
+```bash
+git clone https://github.com/suhaas1126/suhaas-portfolio.git
+cd suhaas-portfolio
+```
 
 ---
 
-## ⚡ Final Note
+## Deployment
 
-This portfolio is continuously evolving as I build more projects and improve my engineering skills.
+Hosted on Vercel.
+
+---
+
+## Contact
+
+GitHub:
+https://github.com/suhaas1126
+
+Portfolio:
+https://suhaas-portfolio-tau.vercel.app/
+
+---
+
+## Future Improvements
+
+- Additional AI-powered projects
+- Improved backend architecture
+- More advanced project case studies
+- Enhanced accessibility and performance
