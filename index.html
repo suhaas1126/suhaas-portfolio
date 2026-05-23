@@ -3563,7 +3563,7 @@ footer {
             </svg>
             GitHub
           </a>
-          <a class="db-ni" href="assets/resume/Suhaas_Choudary_OnePage.docx" target="_blank" rel="noopener">
+          <a class="db-ni" href="assets/resume/Suhaas_Choudary_Mallavarapu_Resume.pdf" data-resume-preview>
             <svg width="10" height="10" viewBox="0 0 14 14" fill="none" aria-hidden="true">
               <path d="M7 1v7M4.5 5.5L7 8l2.5-2.5M2 10.5h10v2H2z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
@@ -3794,7 +3794,7 @@ footer {
             </div>
             <div class="profile-actions">
               <a class="mini-btn" href="https://github.com/suhaas1126" target="_blank" rel="noopener">GitHub</a>
-              <a class="mini-btn" href="assets/resume/Suhaas_Choudary_OnePage.docx" target="_blank" rel="noopener">Download Resume</a>
+              <a class="mini-btn" href="assets/resume/Suhaas_Choudary_Mallavarapu_Resume.pdf" data-resume-preview>Preview Resume</a>
             </div>
           </div>
         </div>
@@ -3868,6 +3868,20 @@ footer {
         <div class="stack-card" data-r><div class="si">RT</div><div class="sn">Socket.io</div><div class="sr">Real-time</div></div>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="resume-modal" id="resume-modal" aria-hidden="true">
+  <div class="resume-overlay" data-resume-close></div>
+  <div class="resume-panel" role="dialog" aria-modal="true" aria-labelledby="resume-title">
+    <div class="resume-topbar">
+      <div class="resume-title" id="resume-title">Resume Preview</div>
+      <div class="resume-actions">
+        <a class="mini-btn" href="assets/resume/Suhaas_Choudary_Mallavarapu_Resume.pdf" target="_blank" rel="noopener">Open PDF</a>
+        <button class="resume-close" type="button" data-resume-close>Close</button>
+      </div>
+    </div>
+    <iframe class="resume-frame" title="Suhaas Choudary Mallavarapu Resume" src="assets/resume/Suhaas_Choudary_Mallavarapu_Resume.pdf"></iframe>
   </div>
 </div>
 
@@ -4054,6 +4068,36 @@ document.querySelectorAll(".pact, .db-btn").forEach((el) => {
   el.addEventListener("click", (e) => {
     e.stopPropagation();
   });
+});
+
+const resumeModal = document.getElementById("resume-modal");
+const resumeFrame = document.querySelector(".resume-frame");
+
+document.querySelectorAll("[data-resume-preview]").forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    resumeFrame.src = link.href;
+    resumeModal.classList.add("is-open");
+    resumeModal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  });
+});
+
+document.querySelectorAll("[data-resume-close]").forEach((control) => {
+  control.addEventListener("click", () => {
+    resumeModal.classList.remove("is-open");
+    resumeModal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  });
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && resumeModal.classList.contains("is-open")) {
+    resumeModal.classList.remove("is-open");
+    resumeModal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
 });
 
 document.querySelectorAll("a[href^='#']").forEach((anchor) => {
